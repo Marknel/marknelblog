@@ -34,8 +34,8 @@ body > header > ul > li { margin: 8px; }
 body > header > ul > li > a { padding: 1px; text-decoration: none; }
 body > header > ul > li > a:hover { background: none; }
 body > header > ul > li > a > span { display: none; }
-body > header a[href="/rss"] { color: #f80; }
-body > header a[href="/rss"]:hover { border-bottom: 1px solid #B55800; }
+body > header a[href^="http://feeds.feedburner.com/"] { color: #f80; }
+body > header a[href^="http://feeds.feedburner.com/"]:hover { border-bottom: 1px solid #B55800; }
 body > header a[href^="http://twitter.com"] { color: #65c0ff; }
 body > header a[href^="http://twitter.com"]:hover { border-bottom: 1px solid #325F79; }
 
