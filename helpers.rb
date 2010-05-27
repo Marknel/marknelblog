@@ -113,8 +113,17 @@ helpers do
   
   # Render the tags for a post
   def tags (tags)
-    tags = tags.collect { |tag| "<li>#{'and ' if tag != tags.first and tag == tags.last}<a href=\"/tags/#{tag}\">#{tag}</a></li>" }
-    "<ul>#{tags.sort.join(', ')}</ul>"
+    tags = tags.collect do |tag| 
+      if tags.size > 1
+        if tag == tags.last
+          prefix = 'and '
+        else
+          suffix = ','
+        end
+      end
+      "<li>#{prefix}<a href=\"/tags/#{tag}\">#{tag}</a>#{suffix}</li>"
+    end
+    "<ul>#{tags.sort.join(' ')}</ul>"
   end
   
   
