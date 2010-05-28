@@ -48,7 +48,7 @@ helpers do
         teaser = paragraphs.first
       end
       
-      if teaser != html.strip and args[:slug]
+      if teaser != nil and teaser != html.strip and args[:slug]
         teaser += "<p><a href=\"/#{args[:slug]}\">Read more...</a></p>"
         html = teaser
       end
