@@ -113,6 +113,8 @@ helpers do
   
   # Render the tags for a post
   def tags (tags)
+    tags = [tags] if tags.is_a? String
+    
     tags = tags.collect do |tag| 
       if tags.size > 1
         if tag == tags.last
