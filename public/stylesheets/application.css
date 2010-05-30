@@ -76,7 +76,7 @@ body > section > ul > li > a:hover { background: none; border-bottom: 1px solid 
 body > section > footer { margin: 30px auto; width: 480px; }
 body > section > footer > h4 { color: #666; font-family: Georgia, Times, serif; font-size: 22px; font-weight: normal; text-align: center; }
 body > section > footer > h4 > a { color: #666; }
-body > section > footer > h4 > a:hover { background: #666; color: black;   }
+body > section > footer > h4 > a:hover { background: #666; color: black; text-decoration: none; }
 body > section > footer > ul { list-style: none; margin: 20px auto; }
 body > section > footer > ul > li > span { display: none; }
 body > section > footer > ul[data-context="pages"] { overflow: auto; text-align: center; width: 100%; width: 300px; }
