@@ -117,6 +117,7 @@ code span.symbol { color: #6d9cbe; }
 code span.module_class { color: #e45c47; }
 code span.variable { color: #d0d0fb; }
 code span.keywords { color: #ffa752; }
+code span.global { color: #6d9cbe; }
 
 code.html span { color: #fff; }
 code.html span.tag,
