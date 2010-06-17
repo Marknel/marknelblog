@@ -8,7 +8,7 @@ After attending the [JavaScript Meetup](http://www.brisjs.com) last Monday I tho
 Since the '+' operator exists for strings anything added to a string will be coerced into being a string, numbers included:
 
     #! Javascript
-    3 + 3' // 6
+    3 + 3 // 6
     "3" + 3 // 33
 
 The '-' operator, however, doesn't exist for strings so they will be coerced into being numbers, given the opportunity:
