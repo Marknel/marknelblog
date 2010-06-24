@@ -138,7 +138,7 @@ helpers do
       newer_post = (newer_post)? "#{link_to_post(newer_post)} is next" : "<span>Nothing is next</span>"
       older_post = (older_post)? "Previously, #{link_to_post(older_post)}" : "<span>Previously, nothing</span>"
       options = "<ul data-context=\"posts\"><li>#{newer_post}</li><li>#{older_post}</li></ul>"
-    else
+    else # page number
       older_posts = (Post.page(relative_to + 1).empty?)? "<span>No older posts</span>" : "<a href=\"/?page=#{relative_to + 1}\">Older posts</a>"
       newer_posts = (relative_to > 1)? "<a href=\"/?page=#{relative_to - 1}\">Newer posts</a>" : "<span>No newer posts</span>"
       options = "<ul data-context=\"pages\"><li>#{older_posts}</li><li>#{newer_posts}</li></ul>"
