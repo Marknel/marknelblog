@@ -1,4 +1,6 @@
 helpers do
+  include ERB::Util
+  
   # Grab a posts title or the default title
   def page_title
     case

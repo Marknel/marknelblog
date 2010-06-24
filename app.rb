@@ -5,7 +5,6 @@ require 'chronic'
 require 'maneki'
 require 'moredown'
 require 'erb'
-include ERB::Util
 
 ENV['TZ'] = 'Australia/Brisbane'
 
