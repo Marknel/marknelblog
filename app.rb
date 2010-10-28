@@ -82,8 +82,10 @@ end
 
 
 before do
-  # Remove the www
-  redirect 'http://nathanhoad.net' if request.env['HTTP_HOST'] == 'www.nathanhoad.net'
+  # Redirect to nathanhoad.net
+  unless request.env['REMOTE_ADDR'] == '127.0.0.1'
+    redirect 'http://nathanhoad.net' if request.env['HTTP_HOST'] != 'nathanhoad.net'
+  end
 end
 
 not_found do
