@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'active_support'
 require 'chronic'
 require 'maneki'
 require 'moredown'

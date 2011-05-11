@@ -149,3 +149,27 @@ helpers do
     "<h4>Where to now?</h4>\n#{options}"
   end
 end
+
+
+# Extend Fixnum to add some time stuff (like Active Support)
+class Fixnum
+  def minute
+    self * 60
+  end
+  alias :minutes :minute
+  
+  def hour
+    self.minutes * 60
+  end
+  alias :hours :hour
+  
+  def day
+    self.hours * 24
+  end
+  alias :days :day
+  
+  def month
+    self.days * 30
+  end
+  alias :months :month
+end
